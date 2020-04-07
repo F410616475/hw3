@@ -11,7 +11,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-
+        var user=intent.extras.get("Name").toString()
+        //var user: String =savedInstanceState!!.get("Name").toString()
+        textView.setText(user)
 
         button.setOnClickListener{
 
@@ -34,7 +36,7 @@ class MainActivity : AppCompatActivity() {
                 }
             }
 
-            var ret : String =nA.toString() + "A"+ nB.toString()+ "B
+            var ret : String =nA.toString() + "A"+ nB.toString()+ "B"
             textView.setText(ret)
 
         }
